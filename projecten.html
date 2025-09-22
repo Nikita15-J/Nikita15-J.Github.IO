@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu"></div>
+    <script>
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        });
+    </script>
+
+    <div class="content-box">
+      <h1>Mijn projecten</h1>
+      <p>
+        <a href="index.html">Eerste opdracht</a>
+      </p>
+    </div>
+</body>
+</html>

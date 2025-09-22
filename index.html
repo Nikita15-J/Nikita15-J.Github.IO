@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="menu"></div>
+    <script>
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        });
+    </script>
+
+    <div class="content-box">
+      <h1>Home</h1>
+      <p>Ik ben 15 en kom van havo 3</p>
+      <p>Ik heb een kat, Zazu</p>
+      <p>Ik woon met mijn moeder, vader, oma en zusje</p>
+      <p>Ik heb 2 jaar piano gespeeld en ga nu weer op les</p>
+      <img src="piano_PNG.png" alt="Piano" width="300" height="300">
+    </div>
+
+</body>
+</html>

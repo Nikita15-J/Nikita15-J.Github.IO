@@ -1,0 +1,50 @@
+body {
+  background-image: url('portfolio.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 2px solid  rgb(70, 6, 70);
+  border-radius: 10px;
+  padding: 10px 0;
+  background-color: rgb(246, 245, 248);
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  color: rgb(70, 6, 70);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-family: inherit; /* zelfde lettertype als de rest */
+  font-size: 1em;       /* zelfde grootte als de content-box tekst */
+}
+
+.content-box {
+  background-color: #f8f8ff;
+  border: 2px solid  rgb(70, 6, 70); 
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgb(246, 245, 248);
+}
+
+.content-box h1,
+.content-box p {
+  color: rgb(70, 6, 70);
+}
+
+.content-box a {
+  color: rgb(70, 6, 70);
+  text-decoration: none;
+  font-weight: bold;
+}

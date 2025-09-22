@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fav food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="menu"></div>
+    <script>
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        });
+    </script>
+
+    <div class="content-box">
+      <h1>Fav Food</h1>
+      <table style="width:100%; border-collapse: collapse;">
+        <tr>
+          <th style="color:rgb(70, 6, 70); border-bottom: 1px solid rgb(70, 6, 70); padding: 8px;">Gerecht</th>
+          <th style="color:rgb(70, 6, 70); border-bottom: 1px solid rgb(70, 6, 70); padding: 8px;">Keuken</th>
+          <th style="color:rgb(70, 6, 70); border-bottom: 1px solid rgb(70, 6, 70); padding: 8px;">Afbeelding</th>
+        </tr>
+        <tr> 
+          <td style="padding: 8px;">Lasagne</td>
+          <td style="padding: 8px;">Italiaans</td>
+          <td style="padding: 8px;"><img src="Lasagna.jpg" alt="Lasagne" style="width:100px; height:auto; border-radius:8px;"></td>
+        </tr>
+        <tr> 
+          <td style="padding: 8px;">Pizza</td>
+          <td style="padding: 8px;">Italiaans</td>
+          <td style="padding: 8px;"><img src="Pizza.jpeg" alt="Pizza" style="width:100px; height:auto; border-radius:8px;"></td>
+        </tr>
+        <tr> 
+          <td style="padding: 8px;">Noodles</td>
+          <td style="padding: 8px;">Aziatisch</td>
+          <td style="padding: 8px;"><img src="Noodles.jpg" alt="Noodles" style="width:100px; height:auto; border-radius:8px;"></td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>
